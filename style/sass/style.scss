@@ -9,6 +9,8 @@ body {
   flex-direction: column;
   font-family: 'Helvetica Neue';
   letter-spacing: 1px;
+  height: 100%;
+  width: 100%;
 }
 
 nav {
@@ -47,7 +49,7 @@ nav {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    width: 22%;
+    width: 20%;
     background-color: #FFF;
     padding: 20px 15px 20px 15px;
 
@@ -200,5 +202,63 @@ nav {
     font-size: 12px;
     font-weight: 600;
     margin: 3px 0;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .card {
+    .card-content {
+      flex-direction: column;
+      align-items: center; 
+    }
+  }
+
+  .app-container{
+    #side-menu {
+      #search {
+        height: 40px;
+        font-size: 14px;
+      }
+      #menu-btn {
+        height: 35px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .side-menu-el-container {
+    .title {
+      font-size: 12px;
+      color: $main;
+      margin: 0;
+    }
+  }
+
+  .driver-info {
+    .driver-details {
+      .driver-name {
+        font-size: 10px;
+      }
+      .driver-jobs {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .driver-availability {
+    text-align: center;
+
+    .available-in {
+      font-size: 10px;
+      margin-top: 10px;
+    }
+    .available-minutes {
+      font-size: 10px;
+    }
+  }
+
+  .job-current {
+    align-items: center;
+    margin-top: 10px;
   }
 }
