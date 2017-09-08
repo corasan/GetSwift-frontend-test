@@ -1,11 +1,14 @@
 $main: #E06857;
 $gray: #EEEEEE;
+$darker-gray: #969696;
 
 body {
   display: flex;
   flex: 1;
   margin: 0;
   flex-direction: column;
+  font-family: 'Helvetica Neue';
+  letter-spacing: 1px;
 }
 
 nav {
@@ -21,19 +24,20 @@ nav {
 
     li {
       display: inline;
-      margin-left: 5px;
-      margin-right: 5px;
+      margin-left: 20px;
+      margin-right: 20px;
 
       a {
         text-decoration: none;
         color: #FFF;
-        font-family: 'Helvetica Neue';
+        font-weight: 500;
       }
     }
   }
 
 }
-.container {
+
+.app-container {
   display: flex;
   flex: 1;
   height: 100%;
@@ -41,37 +45,160 @@ nav {
   
   #side-menu {
     display: flex;
-    align-items: center;
     flex-direction: column; 
-    width: 20%;
+    align-items: center;
+    width: 22%;
     background-color: #FFF;
     padding: 20px 15px 20px 15px;
 
     #search {
       width: 100%;
-      height: 60px;
+      height: 55px;
       border-radius: 3px;
       border-style: solid;
       border-width: 2px;
       border-color: $gray;
-      padding-left: 20px;
+      padding-left: 18px;
       font-size: 16px;
     }
 
     #menu-btn {
-      height: 60px;
+      height: 50px;
       width: 100%;
       border-radius: 3px;
       border-style: none;
       font-size: 16px;
       color: $main;
       background-color: $gray;
+      cursor: pointer;
+      letter-spacing: 1.5px;
     }
   }
 }
 
+// equal spacing for elements inside the side menu
 .side-menu-el {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
+}
+
+// container for side menu elements with content inside
+.side-menu-el-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  background-color: $gray;
+  border-radius: 3px;
+  padding: 15px 6px 8px 6px;
+
+  .title {
+    font-size: 14px;
+    color: $main;
+    margin: 0;
+  }
+
+  .element {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+.card {
+  background-color: #FFF;
+  border-radius: 3px;
+  padding: 12px 6px;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+  
+  .card-content {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.driver-info {
+  flex-direction: row;
+  display: flex;
+
+  .driver-img {
+    border-radius: 4px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .driver-details {
+    .driver-name {
+      font-size: 12px;
+      margin: 1px 8px;
+      font-weight: 600;
+      color: $main;
+    }
+
+    .driver-jobs {
+      font-size: 11px;
+      margin: 1px 8px;
+      color: $darker-gray;
+    }
+  }
+}
+
+.driver-availability {      
+  text-align: right;
+
+  .available-in {
+    font-size: 12px;
+    margin: 1px 0;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .available-minutes {
+    font-size: 11px;
+    margin: 1px 0;
+    color: $darker-gray;
+  }
+}
+
+.job-details {
+  .job-number {
+    font-size: 12px;
+    margin: 1px 8px;
+    color: $darker-gray;
+    margin: 3px 0;
+  }
+
+  .job-location {
+    font-size: 12px;
+    color: $main;
+    margin: 3px 0;
+  }
+
+  .job-author {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1FD794;
+    margin: 3px 0;
+  }
+
+  .job-due {
+    font-size: 12px;
+    color: #F0434A;
+    margin: 3px 0;
+  }
+}
+
+.job-current {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .job-status{
+    color: #F0434A;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 3px 0;
+  }
 }
