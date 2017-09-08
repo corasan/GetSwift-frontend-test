@@ -13,6 +13,7 @@ body {
   width: 100%;
 }
 
+// Navigation bar
 nav {
   display: flex;
   background-color: $main;
@@ -41,7 +42,7 @@ nav {
   }
 }
 
-
+// Container with the site's content
 .app-container {
   display: flex;
   flex: 1;
@@ -134,6 +135,7 @@ nav {
   }
 }
 
+// Card with side menu element content
 .card {
   background-color: #FFF;
   border-radius: 3px;
@@ -147,6 +149,7 @@ nav {
   }
 }
 
+// Information about the driver, this goes inside a card
 .driver-info {
   flex-direction: row;
   display: flex;
@@ -173,6 +176,7 @@ nav {
   }
 }
 
+// Information about the driver availability
 .driver-availability {      
   text-align: right;
 
@@ -190,6 +194,7 @@ nav {
   }
 }
 
+// details about the job
 .job-details {
   .job-number {
     font-size: 12px;
@@ -232,7 +237,8 @@ nav {
   }
 }
 
-@media screen and (max-width: 860px) {
+// Media query for medium sized screens (a bit smaller than a 15 inches laptops)
+@media screen and (max-width: 900px) {
   .card {
     .card-content {
       flex-direction: column;
@@ -292,7 +298,8 @@ nav {
   }
 }
 
-@media screen and (max-width: 700px) {
+// Media query for tablet sized screens
+@media screen and (max-width: 750px) {
   nav{
     height: 40px;
     ul li a {
@@ -367,6 +374,7 @@ nav {
   }
 }
 
+// Media query for phone sized screens
 @media screen and (max-width: 450px) {
   nav {
     justify-content: center;
