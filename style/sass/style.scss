@@ -41,6 +41,7 @@ nav {
   }
 }
 
+
 .app-container {
   display: flex;
   flex: 1;
@@ -52,6 +53,20 @@ nav {
     background-color: green;
     height: 800px;
     width: 100%;
+
+    #map-options-btn {
+      height: 50px;
+      width: 140px;
+      border-radius: 3px;
+      border-style: none;
+      font-size: 16px;
+      color: $main;
+      background-color: $gray;
+      cursor: pointer;
+      letter-spacing: 1.5px;
+      margin-top: 30px;
+      margin-left: 20px;
+    }
   }
   
   #side-menu {
@@ -274,7 +289,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   nav{
     height: 40px;
     ul li a {
@@ -288,6 +303,16 @@ nav {
   }
 
   .app-container{
+    #map {
+      #map-options-btn {
+        font-size: 12px;
+        height: 40px;
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+    }
+
     #side-menu {
       width: 35%;
 
@@ -352,8 +377,19 @@ nav {
       }
     }
   }
+
   .app-container {
     flex-direction: column-reverse;
+    
+    #map {
+      #map-options-btn {
+        font-size: 9px;
+        height: 30px;
+        width: 70px;
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+    }
 
     #side-menu {
       width: 95%;
