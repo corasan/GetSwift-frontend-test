@@ -77,7 +77,7 @@ nav {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    width: 23%;
+    width: 22%;
     background-color: #FFF;
     padding: 20px 15px;
 
@@ -237,7 +237,7 @@ nav {
   }
 }
 
-// Media query for medium sized screens (a bit smaller than a 13 inches laptops)
+// Media query for screens a bit smaller than a 13 inches laptops
 @media screen and (max-width: 1000px) {
   .card {
     .card-content {
