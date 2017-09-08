@@ -53,6 +53,9 @@ nav {
     background-color: green;
     height: 800px;
     width: 100%;
+    background-image: url("../../map.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
     #map-options-btn {
       height: 50px;
